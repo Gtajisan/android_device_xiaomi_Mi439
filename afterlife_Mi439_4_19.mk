@@ -14,6 +14,10 @@ $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
+MITHORIUM_QCOM_HALS_DEFAULT_VARIANT=LA.UM.9.6.4.r1-05500-89xx.QSSI13.0
+
+# Fixes
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
