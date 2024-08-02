@@ -26,6 +26,10 @@ else
     TARGET_USES_MITHORIUM_KERNEL := true
 endif
 
+# Fixes
+MITHORIUM_QCOM_HALS_DEFAULT_VARIANT := LA.UM.9.6.4.r1-05500-89xx.QSSI13.0
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # Partitions
 SSI_PARTITIONS := product system system_ext
 TREBLE_PARTITIONS := odm vendor
