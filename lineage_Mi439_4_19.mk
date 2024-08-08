@@ -24,7 +24,11 @@ PRODUCT_PACKAGES += \
     xiaomi_olive_overlay_lineage
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
- 
+
+# GSS
+TARGET_CORE_GMS_EXTRAS := true
+TARGET_CORE_GMS := true
+
 # Maintainer
 RISING_MAINTAINER=FARHAN•AFK
 TARGET_DEFAULT_PIXEL_LAUNCHER := true
