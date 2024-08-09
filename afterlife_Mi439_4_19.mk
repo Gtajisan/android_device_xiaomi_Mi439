@@ -32,7 +32,7 @@ AFTERLIFE_CORE := true
 USE_PIXEL_CHARGING := true
 TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED= false
+TARGET_FACE_UNLOCK_SUPPORTED := false
 TARGET_SUPPORTS_TOUCHGESTURES := true
 
 # Device identifier. This must come after all inclusions
