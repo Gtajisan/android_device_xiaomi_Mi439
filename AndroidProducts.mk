@@ -13,5 +13,5 @@ COMMON_LUNCH_CHOICES := \
     afterlife_Mi439-userdebug \
     afterlife_Mi439-eng \
     afterlife_Mi439_4_19-user \
-    afterlife_Mi439_4_19-userdebug \
-    afterlife_Mi439_4_19-eng
+    afterlife_Mi439_4_19-eng \
+    afterlife_Mi439_4_19-userdebug
