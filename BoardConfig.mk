@@ -163,4 +163,4 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 include vendor/xiaomi/Mi439/BoardConfigVendor.mk
 
 # broken fix
-export BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
