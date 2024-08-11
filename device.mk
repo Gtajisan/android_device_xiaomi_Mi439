@@ -51,6 +51,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.msm8937
 
+# Inherit viper4androidfx
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Dumpstate
 PRODUCT_PACKAGES += \
     libdumpstate_device
