@@ -25,17 +25,6 @@ PRODUCT_PACKAGES += \
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
-# RisingTechOSS Flags
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-
-# GMS
-WITH_GMS := true
-TARGET_CORE_GMS := true
-TARGET_CORE_GMS_EXTRAS := false
-
-# Maintainer
-RISING_MAINTAINER=FARHAN•AFK
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439_4_19
@@ -55,7 +44,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Xiaomi/olive/olive:10/QKQ1.191014.001/V12.5.1.0.QCNMIXM:user/release-keys"
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Mi439_4_19" \
-    RISING_MAINTAINER="FARHAN•AFK" \
-    RISING_CHIPSET="SDM439"
+
