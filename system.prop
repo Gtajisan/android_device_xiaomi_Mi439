@@ -1,2 +1,4 @@
 # Xiaomi Mi439 - FM Radio
 hw.fm.internal_antenna=1
+# crDroid maintainer
+ro.lineage.maintainer="AFK•FARHAN"
