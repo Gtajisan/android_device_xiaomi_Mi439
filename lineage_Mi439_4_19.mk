@@ -36,6 +36,10 @@ TARGET_CORE_GMS_EXTRAS := false
 
 # Maintainer
 RISING_MAINTAINER=FARHAN•AFK
+ROM_FOLDER := lineage
+
+# Signing
+-include vendor/lineage-priv/keys/keys.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439_4_19
