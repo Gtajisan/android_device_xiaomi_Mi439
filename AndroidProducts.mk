@@ -14,4 +14,5 @@ COMMON_LUNCH_CHOICES := \
     aosp_Mi439-eng \
     aosp_Mi439_4_19-user \
     aosp_Mi439_4_19-userdebug \
-    aosp_Mi439_4_19-eng
+    aosp_Mi439_4_19-eng \
+    aosp_Mi439_4_19-ap2a-userdebug
