@@ -125,6 +125,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/Mi439/Mi439-vendor.mk)
 
+# Signed Build
+$(call inherit-product, vendor/extra/product.mk)
+
 
 # EXTRA: MiuiCamera
 ifneq ($(wildcard vendor/miuicamera/config.mk),)
