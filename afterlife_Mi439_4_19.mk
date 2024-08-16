@@ -39,7 +39,7 @@ AFTERLIFE_GAPPS := true
 AFTERLIFE_CORE := true
 
 # Signing
--include vendor/lineage-priv/keys/keys.mk
+#-include vendor/lineage-priv/keys/keys.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439_4_19
