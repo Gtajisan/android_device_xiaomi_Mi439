@@ -29,9 +29,15 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 TARGET_DEFAULT_PIXEL_LAUNCHER := true
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 
-# Maintainer
-RISING_MAINTAINER=FARHAN•AFK
+#TARGET_CORE_GMS := true
+PRODUCT_NO_CAMERA := false
+
+# RisingOS Stuffs
 ROM_FOLDER := lineage
+RISING_MAINTAINER=FARHAN•AFK
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
 
 # Signing
 -include vendor/lineage-priv/keys/keys.mk
