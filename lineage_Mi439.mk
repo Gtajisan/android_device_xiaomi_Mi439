@@ -25,12 +25,23 @@ PRODUCT_PACKAGES += \
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
+# RisingTechOSS Flags
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 
-# Sakura Official
-SAKURA_MAINTAINER := FARHAN•S1
-SAKURA_BUILD_TYPE := gapps
+# Maintainer
+RISING_MAINTAINER=FARHAN•AFK
+ROM_FOLDER := lineage
+PRODUCT_NO_CAMERA := false
+
+# Signing
+-include vendor/lineage-priv/keys/keys.mk
+
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="Mi439_4_19" \
+    RISING_MAINTAINER="FARHAN•AFK" \
+    RISING_CHIPSET="SDM439"
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439
