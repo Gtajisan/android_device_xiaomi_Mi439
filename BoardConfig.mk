@@ -56,9 +56,6 @@ TARGET_OTA_ASSERT_DEVICE := pine,olive,olivelite,olivewood,olives,mi439,Mi439,Mi
 # Display
 TARGET_SCREEN_DENSITY := 320
 
-# Fastboot
-TARGET_BOARD_FASTBOOT_INFO_FILE := $(DEVICE_PATH)/fastboot-info.txt
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest/gatekeeper.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -85,6 +82,7 @@ TARGET_KERNEL_RECOVERY_CONFIG += vendor/msm-clk.config
 endif
 
 # Partitions
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_USES_METADATA_PARTITION := true
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -110,12 +108,11 @@ BOARD_MI439_DYNPART_PARTITION_LIST := $(ALL_PARTITIONS)
 # Partitions - reserved size
 $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_EXTFS_INODE_COUNT := -1))
-
-BOARD_ODMIMAGE_EXTFS_INODE_COUNT := 128
-BOARD_VENDORIMAGE_EXTFS_INODE_COUNT := 6144
+$(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
+    $(eval BOARD_$(p)IMAGE_EXTFS_INODE_COUNT := 5120))
 
 $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
-    $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 83886080)) # 80 MB
+    $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 209715200)) # 200 MB
 $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 41943040)) # 40 MB
 
@@ -123,7 +120,6 @@ ifneq ($(WITH_GMS),true)
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1287651328 # 1228 MB
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 314572800 # 300 MB
 endif
-
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
