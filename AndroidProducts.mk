@@ -14,4 +14,5 @@ COMMON_LUNCH_CHOICES := \
     infinity_Mi439-eng \
     infinity_Mi439_4_19-user \
     infinity_Mi439_4_19-userdebug \
-    infinity_Mi439_4_19-eng
+    infinity_Mi439_4_19-eng \
+    infinity_Mi439_4_19-ap2a-userdebug
