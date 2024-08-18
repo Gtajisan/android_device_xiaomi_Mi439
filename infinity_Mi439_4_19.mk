@@ -35,6 +35,7 @@ TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_SUPPORTS_QUICK_TAP := true
 USE_MOTO_CALCULATOR := true
 TARGET_BUILD_VIMUSIC := true
+ROM_FOLDER := afterlife
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439_4_19
