@@ -25,10 +25,6 @@ PRODUCT_PACKAGES += \
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
-
-
-
-
 # Maintainer Name
 INFINITY_MAINTAINER := "INFINITY-X-FARHAN" 
 
