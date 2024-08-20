@@ -56,6 +56,7 @@ TARGET_INCLUDE_MATLOG := false
 
 # Maintainer
 ALPHA_MAINTAINER := FARHAN•AFK
+ROM_FOLDER := lineage
 
 # sign-builds
 -include vendor/lineage-priv/keys/keys.mk
