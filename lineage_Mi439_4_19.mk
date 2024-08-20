@@ -38,6 +38,7 @@ RISING_MAINTAINER=FARHAN•AFK
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
 WITH_GMS := true
+TARGET_CORE_GMS := true
 
 # Signing
 -include vendor/lineage-priv/keys/keys.mk
