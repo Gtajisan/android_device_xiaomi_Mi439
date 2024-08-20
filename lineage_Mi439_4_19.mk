@@ -55,7 +55,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_MATLOG := false
 
 # Maintainer
-ALPHA_MAINTAINER := FARHAN|jisan
+ALPHA_MAINTAINER := FARHAN•AFK
 
 # sign-builds
 -include vendor/lineage-priv/keys/keys.mk
