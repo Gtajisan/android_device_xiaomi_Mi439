@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2024 The Evolution-X Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -121,6 +121,7 @@ $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
 
 ifneq ($(WITH_GMS),true)
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1287651328 # 1228 MB
+BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 314572800 # 300 MB
 endif
 
 # Power
