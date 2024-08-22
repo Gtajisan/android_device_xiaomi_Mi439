@@ -116,9 +116,6 @@ $(call inherit-product, vendor/xiaomi/Mi439/Mi439-vendor.mk)
 # Inherit viper4androidfx
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
-# MiuiCamera
-$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
-
 # EXTRA: MiuiCamera
 ifneq ($(wildcard vendor/miuicamera/config.mk),)
 $(call inherit-product, vendor/miuicamera/config.mk)
