@@ -29,10 +29,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 INFINITY_MAINTAINER := "INFINITY-X-FARHAN" 
 
 # Whether the package supports BLURS
-TARGET_SUPPORTS_BLUR := true
+TARGET_SUPPORTS_BLUR := false
 
 # Whether the device supports UDFPS (FOD)
-TARGET_HAS_UDFPS := true
+TARGET_HAS_UDFPS := false
 
 # Whether the compiled package ships Google Apps:
 WITH_GAPPS := true
