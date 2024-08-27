@@ -26,11 +26,12 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
+# Sakura stuff
+SAKURA_OFFICIAL := true
+SAKURA_MAINTAINER := FARHAN
+TARGET_BOOT_ANIMATION_RES := 1080
+SAKURA_BUILD_TYPE := gapps
 
-# Sakura Official
-SAKURA_MAINTAINER := FARHAN•S
 
 # sign-builds
 -include vendor/lineage-priv/keys/keys.mk
