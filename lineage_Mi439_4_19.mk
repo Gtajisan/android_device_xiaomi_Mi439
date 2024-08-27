@@ -25,17 +25,15 @@ PRODUCT_PACKAGES += \
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
-
 # Sakura stuff
-SAKURA_OFFICIAL := true
-SAKURA_MAINTAINER := FARHAN
+SAKURA_MAINTAINER := FARHAN•AFK
 TARGET_BOOT_ANIMATION_RES := 1080
 SAKURA_BUILD_TYPE := gapps
-
+ROM_FOLDER := lineage
 
 # sign-builds
 -include vendor/lineage-priv/keys/keys.mk
- 
+
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439_4_19
