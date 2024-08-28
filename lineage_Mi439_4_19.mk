@@ -26,11 +26,11 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 
-
-
+# TenX Flags
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
 ROM_FOLDER := lineage
-
-
 
 # Signing
 -include vendor/lineage-priv/keys/keys.mk
