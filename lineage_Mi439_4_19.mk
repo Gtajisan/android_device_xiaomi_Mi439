@@ -35,6 +35,9 @@ TARGET_EXCLUDES_AUXIO := true
 TARGET_EXCLUDES_VIA := true
 ROM_FOLDER := lineage
 
+# Boot animaton
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439_4_19
 PRODUCT_NAME := lineage_Mi439_4_19
