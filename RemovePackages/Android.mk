@@ -6,6 +6,20 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     Chrome \
+    MyVerizonServices \
+    OBDM_Permissions \
+    obdm_stub \
+    OemDmTrigger \
+    OPScreenRecord \
+    Ornament \
+    SafetyHubPrebuilt \
+    ScribePrebuilt \
+    Showcase \
+    Snap \
+    SprintDM \
+    SprintHM \
+    VZWAPNLib \
+    VzwOmaTrigger \
     MatLog \
     AudioFX \
     CalendarGoogle \
