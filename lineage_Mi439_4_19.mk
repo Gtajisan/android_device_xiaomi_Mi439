@@ -28,7 +28,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 # Sakura stuff
 SAKURA_MAINTAINER := FARHAN•AFK
 TARGET_BOOT_ANIMATION_RES := 1080
-SAKURA_BUILD_TYPE := gapps
 ROM_FOLDER := lineage
 
 # sign-builds
