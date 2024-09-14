@@ -164,3 +164,5 @@ include vendor/xiaomi/Mi439/BoardConfigVendor.mk
 
 # Missing Required Module
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/Phoneinfo.prop
