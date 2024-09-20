@@ -34,10 +34,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := false
 TARGET_SUPPORTS_TOUCHGESTURES := true
 
-# CoreGapps
-AFTERLIFE_GAPPS := true
-AFTERLIFE_CORE := true
-
 # Signing
 #-include vendor/lineage-priv/keys/keys.mk
 
