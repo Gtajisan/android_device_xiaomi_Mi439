@@ -35,7 +35,7 @@ TARGET_SUPPORTS_BLUR := false
 TARGET_HAS_UDFPS := false
 
 # Whether the compiled package ships Google Apps:
-WITH_GAPPS := false
+WITH_GAPPS := true
 
 # Whether the compiled shipped gapps package uses Google Dialer, Messaging, Contacts:
 TARGET_BUILD_GOOGLE_TELEPHONY := true
