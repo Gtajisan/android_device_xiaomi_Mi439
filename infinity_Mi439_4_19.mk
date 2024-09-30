@@ -26,7 +26,7 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Maintainer Name
-INFINITY_MAINTAINER := "FARHAN AFK" 
+INFINITY_MAINTAINER := "FARHAN-AFK" 
 
 # Whether the package supports BLURS
 TARGET_SUPPORTS_BLUR := false
