@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+
+# Scudo
+PRODUCT_USE_SCUDO := true
+
 # Cryptfshw
 TARGET_EXCLUDE_CRYPTFSHW := true
 
