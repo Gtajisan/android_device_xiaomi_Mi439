@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/orion/config/common_full_phone.mk)
 
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
@@ -25,16 +25,14 @@ PRODUCT_PACKAGES += \
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
-# RisingTechOSS Flags
-TARGET_DEFAULT_PIXEL_LAUNCHER := false 
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-
-# RisingOS Stuffs
-ROM_FOLDER := lineage
-RISING_MAINTAINER=FARHAN•AFK
-WITH_GMS := true
-TARGET_CORE_GMS := true
-PRODUCT_NO_CAMERA := false
+# OrionOS Flags
+ORION_MAINTAINER := "FARHAN_AFK"
+ORION_MAINTAINER_LINK := "https://t.me/FARHAN_MUH_TASIM"
+ORION_GAPPS := false 
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
+ROM_FOLDER := orion 
 
 # Signing
 -include vendor/lineage-priv/keys/keys.mk
