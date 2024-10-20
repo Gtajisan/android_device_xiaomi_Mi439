@@ -1,5 +1,5 @@
-<manifest version="2.0" type="device">
-    target-level="legacy"
+<manifest version="2.0" type="device" target-level="legacy">
+    
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
